@@ -181,6 +181,62 @@ header {
 	color: var(--secondary-color) !important;
 }
 
+#diensten__overlay--container{
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--primary-color);
+	position: absolute;
+	top: -80%;
+	left: 0;
+	z-index: 1;
+	opacity: 0;
+	transition: all .3s ease-in;
+}
+
+.diensten--active{
+	top: 0 !important;
+	opacity: 1!important;
+}
+
+.dienst{
+	width: 25%;
+	padding: 50px;
+	border-right: solid 1px var(--white-color);
+	margin: 30px 0px;
+}
+
+.dienst h2, .dienst p{
+	color: var(--white-color);
+}
+
+.dienst h2{
+	font-size: 20px;
+}
+
+.dienst p{
+	font-size: 16px;
+}
+
+.dienst a{
+	color: var(--white-color)!important;
+	position: relative;
+	margin-left: 40px;
+	padding-left: 5px;
+}
+
+.dienst a::before{
+ content: '';
+ position: absolute;
+ left: -17%;
+ top: 50%;
+ width: 40px;
+ height: 2px;
+ background-color: var(--secondary-color);
+}
+
+.dienst:nth-child(4n + 4){
+	border-right: unset;
+}
 
 /* Banner Section */
 

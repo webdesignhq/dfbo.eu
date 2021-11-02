@@ -105,6 +105,12 @@ $(document).ready(function() {
 	$(".menu-toggle").click(function(e) {
         $(".mobile__menu--container").toggleClass('mobile-active')
     });
+
+	$(".menu-item-52").click(function(e) {
+		e.preventDefault();
+		console.log('aesfa')
+		$("#diensten__overlay--container").toggleClass('diensten--active')
+	});
 	
 });
 

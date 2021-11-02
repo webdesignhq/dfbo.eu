@@ -56,6 +56,34 @@
 				</div>
 			</div>		
 	</header>
+
+	<div id="diensten__overlay--container" class="d-flex flex-column justify-content-center">
+		<div class="container-xxl ">
+			<div class="row d-flex flex-wrap mx-auto">
+
+				<?php  
+					$args = array(
+						'post_type'      => 'vakgebied',
+						'posts_per_page' => 8,
+						'orderby' => 'rand',
+					);
+
+					$loop = new WP_Query( $args );
+
+					while ( $loop->have_posts() ) : $loop->the_post(); ?>
+						<?php global $post; ?>
+						<div class="dienst d-flex flex-column justify-content-between">
+							<h2><?php echo $post->post_title; ?></h2>
+							<p><?php echo wp_trim_words( get_the_excerpt(), 15 ); ?></p>
+							<a href="<?php echo get_permalink(); ?>">Lees meer</a>
+						</div>
+
+					<?php endwhile;
+					wp_reset_query();
+					?>
+			</div>
+		</div>
+	</div>
 	
 	<?php if(!is_page(5)) { ?>
 		<?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); ?>
