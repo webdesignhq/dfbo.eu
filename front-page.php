@@ -9,6 +9,7 @@ get_header();
 </video>
 <div id="banner">
 	<div class="overlay">
+	</div>
 		<div class="container-xxl">
 			<div class="row">
 				<div class="col-md-8">
@@ -18,7 +19,6 @@ get_header();
 					</div>
 				</div>
 			</div>
-		</div>
 	</div>
 	<div class="bannerblocks">
 		<div class="container-xxl">
@@ -26,17 +26,17 @@ get_header();
 				<div class="col-md-3 p-4">
 					<span>Particulier & Familie</span>
 					<p>Alles wat hier staat is slechts om een indruk te geven</p>
-					<a href="#" class="read-more"> - Lees meer</a>
+					<a href="#" class="read-more"> Lees meer</a>
 				</div>
 				<div class="col-md-3 p-4">
 					<span>Ondernemer & DGA & Personeel</span>
 					<p>Alles wat hier staat is slechts om een indruk te geven</p>
-					<a href="#" class="read-more"> - Lees meer</a>
+					<a href="#" class="read-more"> Lees meer</a>
 				</div>
 				<div class="col-md-3 p-4">
 						<span>Intermediair</span>
 					<p>Alles wat hier staat is slechts om een indruk te geven</p>
-					<a href="#" class="read-more"> - Lees meer</a>
+					<a href="#" class="read-more"> Lees meer</a>
 				</div>
 				<div class="col-md-3">
 					
