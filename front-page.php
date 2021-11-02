@@ -8,12 +8,14 @@ get_header();
   <source src="https://ak.picdn.net/shutterstock/videos/1013671835/preview/stock-footage-low-angle-shot-of-a-team-doing-a-hands-in-cheer-before-the-big-game-huddle.mp4" type="video/mp4">
 </video>
 <div id="banner">
-	<div class="container-xxl">
-		<div class="row">
-			<div class="col-md-8">
-				<div class="bannercontent text-left p-4">
-					<h1>Wij hebben de focus op PRO actief<br>Samenwerking & vertrouwen</h1>
-					<span>Dit is een faketekst. Alles wat hier staat is slechts om een indruk te geven van het grafische effect van tekst op deze plek.</span>
+	<div class="overlay">
+		<div class="container-xxl">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="bannercontent text-left p-4">
+						<h1>Wij hebben de focus op PRO actief<br>Samenwerking & vertrouwen</h1>
+						<span>Dit is een faketekst. Alles wat hier staat is slechts om een indruk te geven van het grafische effect van tekst op deze plek.</span>
+					</div>
 				</div>
 			</div>
 		</div>

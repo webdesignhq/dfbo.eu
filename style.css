@@ -240,6 +240,13 @@ header {
 	font-weight: 300;
 }
 
+#banner .overlay{
+	height: 100%;
+	width: 100%;
+	background-color: var(--primary-color);
+	opacity: 0.6;
+}
+
 /* About Section */
 
 #about {
