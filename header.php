@@ -107,8 +107,8 @@
 				<div class="product__container col-12 d-lg-flex d-block flex-row">
 					<div class="d-flex flex-column justify-content-center">
 						<div class="bannerindexcontent">
-							<h1><?php echo get_the_title(); ?></h1>
 							<p><?php the_breadcrumb(); ?></p>
+							<h1><?php echo single_term_title(); ?></h1>
 						</div>
 					</div>
 				</div>

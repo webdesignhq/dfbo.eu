@@ -486,8 +486,110 @@ header {
 	color: var(--white-color);
 }
 
+.vakgebied{
+	position: relative!important;
+	margin-left: 40px;
+	padding-left: 12px;
+	color: var(--secondary-color);
+}
+
+.vakgebied::before{
+	content: '';
+	position: absolute;
+	left: -30%;
+	top: 45%;
+	width: 40px;
+	height: 2px;
+	background-color: var(--secondary-color);
+   }
+
 .bannerindexcontent h1, .bannerindexcontent p, .bannerindexcontent p a{
 	color: var(--white-color);
+}
+.inleiding{
+
+}
+
+#category__container, #category__about__container{
+	padding-left: 250px;
+	padding-right: 250px;
+	padding-top: 125px;
+	padding-bottom: 125px;
+	z-index: -50;
+}
+
+#category__container--image{
+	background-image: url('./img/startpagina.jpg');
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 800px;
+	margin-top: -500px;
+	z-index: -99;
+	position: relative;
+	filter: grayscale(100%);
+}
+
+#category__posts{
+	padding-top: 125px;
+	padding-bottom: 175px;
+	background-color: var(--primary-color);
+}
+
+.cat__post{
+	border-right: solid 1px var(--white-color);
+	margin-top: 50px;
+	height: 300px;
+}
+
+#category__posts h3, #category__posts p,#category__posts a{
+	color: var(--white-color);
+}
+
+#category__posts h2{
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--white-color);
+}
+
+#category__posts h3{
+	font-size: 20px!important;
+	font-weight: bold;
+}
+
+#category__posts p, #category__posts a{
+	font-weight: 300;
+	font-size: 16px!important;
+}
+
+#category__posts .read-more::before{
+	left: -18%!important;
+}
+
+#category__posts .slick-prev, #category__posts .slick-next{
+	position: absolute!important;
+	bottom: -100px;
+	right: 0;
+	border: none;
+	background-color: var(--secondary-color);
+	color: var(--white-color);
+	width: 45px;
+	height: 45px;
+}
+#category__posts .slick-prev{
+	right: 55px;
+}
+
+#category__posts .slidervakgebied{
+	position: relative;
+}
+
+#category__posts .cat__post:last-child{
+	border-right: unset;
+}
+
+#categorty__posts .slick-track, #categorty__posts .slick-list{
+	width: 100%!important;
 }
 
 /* Contact Page */
