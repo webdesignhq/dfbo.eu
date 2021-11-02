@@ -54,7 +54,7 @@ get_header(); ?>
                                         <div class="cat__post col-md-3 p-5 d-flex flex-column justify-content-between">
                                             <h3><?php echo get_the_title(); ?></h3>
                                             <p><?php echo wp_trim_words( get_the_excerpt(), 15 ); ?></p>
-                                            <a href="<?php echo get_category_link( $category->term_id ) ?>" class="read-more"> Lees meer</a>
+                                            <a href="<?php echo get_permalink() ?>" class="read-more"> Lees meer</a>
                                         </div>
                                     
                                     <?php 
@@ -72,7 +72,7 @@ get_header(); ?>
                                         <div class="cat__post col-md-3 p-5 d-flex flex-column justify-content-between">
                                             <h3><?php echo get_the_title(); ?></h3>
                                             <p><?php echo wp_trim_words( get_the_excerpt(), 15 ); ?></p>
-                                            <a href="<?php echo get_category_link( $category->term_id ) ?>" class="read-more"> Lees meer</a>
+                                            <a href="<?php echo get_permalink() ?>" class="read-more"> Lees meer</a>
                                         </div>
                                 <?php 
                                 } }
