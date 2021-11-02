@@ -195,13 +195,13 @@ header {
 
 .sticky-header {
 	position: fixed;
-    background: rgba(255,255,255,0.9);
+    background: var(--primary-color);
     transition: 0.4s;
 }
 
 
 .sticky-header .main-navigation a {
-	color: var(--secondary-color) !important;
+	color: var(--white-color) !important;
 }
 
 #diensten__overlay--container{
@@ -311,7 +311,7 @@ header {
 #banner .bannerblocks {
 	position: absolute;
 	width: 100%;
-	bottom: 90px;
+	bottom: 94px;
 	background-color: rgba(15,30,56,0.6);
 	padding: 50px 0;
 }
@@ -329,7 +329,7 @@ header {
 }
 
 #banner .overlay{
-	height: 95%;
+	height: 96%;
 	width: 100%;
 	background-color: var(--primary-color);
 	opacity: 0.6;
