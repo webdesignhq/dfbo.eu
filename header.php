@@ -59,13 +59,12 @@
 	
 	<?php if(!is_page(5)) { ?>
 		<?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); ?>
-		<div id="bannerindex" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; background-size: cover;">
+		<div id="bannerindex" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; background-size: cover; height: 400px;">
 		<div class="container-xxl">
 			<div class="product__container col-12 d-lg-flex d-block flex-row">
 				<div class="d-flex flex-column">
-					<div class="bannerindexcontent text-left p-4">
+					<div class="bannerindexcontent">
 						<h1><?php echo get_the_title(); ?></h1>
-						<span><?php echo the_excerpt(); ?></span>
 						<p><?php the_breadcrumb(); ?></p>
 					</div>
 				</div>

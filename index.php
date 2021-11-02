@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
-<div id="content">
-	<div class="row content">
-		<div class="medium-12 columns">
-			<div class="columns">
+<div id="content" class="py-5">
+	<div class="container-xl">
+		<div class="d-flex flex-row">
+			<div class="d-flex flex-column">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 							 
 				<?php the_content(); ?>
