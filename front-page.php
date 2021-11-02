@@ -14,7 +14,7 @@ get_header();
 			<div class="row">
 				<div class="col-md-8">
 					<div class="bannercontent text-left p-4">
-						<h1>Wij hebben de focus op PRO actief<br>Samenwerking & vertrouwen</h1>
+						<h1>Wij hebben de focus op PRO actief<br>Samenwerking <span> & </span> vertrouwen</h1>
 						<span>Dit is een faketekst. Alles wat hier staat is slechts om een indruk te geven van het grafische effect van tekst op deze plek.</span>
 					</div>
 				</div>
@@ -71,7 +71,7 @@ get_header();
 		<div class="row">
 		<span>- Voorstellen </span>
 		<h2>Meet the team</h2>
-			<div class="sliderteam">
+			<div class="sliderteam pt-5">
 				<?php  
 				$args = array(
 					'post_type'      => 'team',
@@ -84,10 +84,22 @@ get_header();
 				while ( $loop->have_posts() ) : $loop->the_post(); ?>
 				<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); ?>
 					 <div class="teamblock me-4">
-					 <img src="<?php echo $image[0]; ?>">
+						<img src="<?php echo $image[0]; ?>">
 						<?php global $post; ?>
 						<div class="teamcontent">
-							<span><?php echo get_the_title(); ?></span>
+							<span><?php echo get_the_title(); ?></span><br><br>
+							<?php
+								$specialities_rows = get_field('specialities');
+									if($specialities_rows)
+									{
+										echo '<ul>';
+										foreach($specialities_rows as $row)
+										{
+											echo '<li style="font-size: 12px;color: #fff;"> '. $row['name'] .' </li>';
+										}
+										echo '</ul>';
+									}
+							?>
 						</div>
 					</div>
 		

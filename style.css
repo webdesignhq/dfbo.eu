@@ -7,6 +7,13 @@
  Tags:         light, colors, simple , no sidebar, responsive-layout, accessibility-ready
 */
 
+@font-face{
+  font-family: 'Lucida Bright';
+  src: url('/dfbo.eu/wp-content/themes/dfbo.eu/fonts/Lucidabright.ttf') format('truetype');
+}
+
+
+
 :root {
   --primary-color: #081A34;
   --secondary-color: #EF7726;
@@ -25,9 +32,9 @@ body {
 }
 
 h1 {
-  	font-family: var(--primary-font);
+  	font-family: 'Lucida Bright';
 	font-size: 50px;
-	font-weight: 600;
+	font-weight: 400;
 	color: var(--black-color);
 	text-transform: uppercase;
 }
@@ -139,6 +146,22 @@ a:hover {
 	position: relative;
 }
 
+
+input[type=text], input[type=email], input[type=tel], textarea {
+	background-color: var(--white-color);
+	border: none;
+}
+
+input[type=submit] {
+	background-color: var(--primary-color);
+	border: none;
+	color: #fff;
+	padding: 15px 40px;
+}
+
+input[type=submit]:hover {
+	background-color: var(--secondary-color);
+}
 
 /* Header Section */
 .custom_logo {
@@ -268,8 +291,17 @@ header {
  top: 25%;
 }
 
+#banner .bannercontent h1 span {
+	font-size: 80px;
+	color: var(--secondary-color);
+	font-family: 'Lucida Bright';
+	font-weight: 300;
+}
+
 #banner  h1 {
 	color: var(--white-color);
+	line-height: 55px;
+	font-weight: 200;
 }
 
 #banner span {
@@ -323,12 +355,13 @@ header {
 	background: url('./img/startpagina.jpg') bottom right no-repeat;
 	padding-bottom: 250px;
 	margin-bottom: 50px;
-	
+	margin-top: -35px;
 }
 
 .aboutblock {
 	background-color: #F8F9FB;
 	padding: 5% 10%;
+	border-top: 8px solid #ef7726;
 }
 
 .aboutblock span {
@@ -411,6 +444,7 @@ header {
 
 .teamblock img {
 	width: 100%;
+	border-top: 8px solid #ef7726;
 }
 
 .teamblock p {
@@ -421,6 +455,7 @@ header {
 	background-color: var(--primary-color);
 	transition: 0.4s;
 	padding: 20px;
+	height: 220px;
 }
 
 .teamblock .teamcontent span {
@@ -594,62 +629,23 @@ header {
 
 /* Contact Page */
 #contact {
-	height: 100%;
-	background: linear-gradient(-90deg, var(--white-color) 40%, var(--sand-25) 15%, var(--sand-25) 55%);
+	background: url('./img/startpagina.jpg') bottom right no-repeat;
+	padding-bottom: 250px;
+	margin-bottom: 50px;
+	height: 800px;
+	margin-top: 100px;
+	
 }
 
-#contact .contactimg img {
-	width: 100%;
+.contactblock {
+	background-color: #F8F9FB;
+	padding: 5% 10%;
 }
 
-#locations .contactblock {
-	position: relative;
-}
-
-
-#contact .social-link {
-	font-size: 20px;
-	color: #000;
-	margin-bottom: 20px;
-}
-
-#contact .social-link img {
-	margin-right: 10px;
-	object-fit: contain;
-	background-color: var(--primary-color);
-	padding: 20px;
-}
-
-#contact .btn {
-	width: 300px;
-}
-
-/* What We Do Section */
-
-#whatwedo {
-		background: linear-gradient(-90deg, var(--white-color) 40%, var(--sand-25) 15%, var(--sand-25) 55%);
-}
-
-#whatwedo .whatwedoimg img {
-	width: 100%;
-}
-
-.content img {
-	width: 100%;
-	height: 250px;
-	object-fit: cover;
-}
-
-.nav-link.active {
-	background-color: var(--people-color) !important;
-	color: var(--white-color) !important;
-	border-radius: 0;
-}
-
-.nav-link {
+.contactblocks span {
 	color: var(--secondary-color);
 }
- 
+
 
 /* Footer Section */
 #footer {
@@ -736,6 +732,20 @@ header {
 	transition: all 0.4s;
 	cursor: pointer;
 }
+
+.main-navigation li:last-child {
+	background-color: var(--secondary-color);
+	color: var(--white-color);
+}
+
+.main-navigation li:last-child:hover {
+	background-color: var(--primary-color);
+}
+
+.main-navigation li:last-child:hover a {
+	color: var(--white-color);
+}
+
 .main-navigation li:hover > a {
 	color: var(--primary-color);
 	transition: 0.4s;

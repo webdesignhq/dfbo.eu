@@ -26,56 +26,31 @@
 			<div class="row pt-5 pb-5">
 				<div class="col-md-3 small-12 columns">
 					<div class="custom_logo">
-						<?php 
-							if ( function_exists( 'the_custom_logo' ) ) {
-								 the_custom_logo();
-								}
-							?>
+						<img src="">
 					</div>
 				</div>
 				<div class="col-md-3 small-12 columns">
-					<ul>
-						<li><strong>Diensten</strong></li>
-					</ul>
-					<ul>
-						<li>Stationsplein 45</li>
-						<li>Unit A3.202</li>
-						<li>3013 AK Rotterdam</li>
-					</ul>
-
-					<ul>
-						<li><a class="contact" href="#">+31(0)10 310 08</a></li>
-						<li><a href="mailto:info@allchiefs.nl">info@allchiefs.nl</a></li>
-					</ul>
+					<strong>Diensten</strong></li>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 				</div>
 				<div class="col-md-3 small-12 columns">
-					<ul>
-						<li><strong>Meer informatie</strong></li>
-					</ul>
-					<ul>
-						<li>Stationsplein 45</li>
-						<li>Unit A3.202</li>
-						<li>3013 AK Rotterdam</li>
-					</ul>
+					<strong>Meer informatie</strong>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 
-					<ul>
-						<li><a class="contact" href="#">+31(0)10 310 08</a></li>
-						<li><a href="mailto:info@allchiefs.nl">info@allchiefs.nl</a></li>
-					</ul>
+	
 				</div>
 				<div class="col-md-3 small-12 columns">
 					<ul>
 						<li><strong>Contactgegevens</strong></li>
 					</ul>
 					<ul>
-						<li>Stationsplein 45</li>
-						<li>Unit A3.202</li>
-						<li>3013 AK Rotterdam</li>
+						<li>Noordersingel 1</li>
+						<li>9401 JV Assen</li>
 					</ul>
 
 					<ul>
-						<li><a class="contact" href="#">+31(0)10 310 08</a></li>
-						<li><a href="mailto:info@allchiefs.nl">info@allchiefs.nl</a></li>
+						<li><a class="contact" href="#">0593 12346</a></li>
+						<li><a href="mailto:info@dfbo.eu">info@dfbo.eu</a></li>
 					</ul>
 				</div>
 			</div>
@@ -84,7 +59,7 @@
 	<div id="copyright">
 		<div class="row">
 			<div class="col-md-12 columns">
-				<p class="text-white">Copyright &copy; - <?php echo date('Y') ?></p>
+				<p class="text-white">Copyright &copy; - <?php echo date('Y') ?> - Dutch Family Business Office</p>
 			</div>
 		</div>
 	</div>
