@@ -59,7 +59,7 @@ get_header();
 		<div class="row">
 			<div class="col-md-7 aboutblock">
 				<span class="vakgebied">Voorstellen </span>
-				<h2>De Dutch Family Business Office</h2>
+				<h2 class="mt-3">De Dutch Family Business Office</h2>
 				<p>De Dutch Familiy Business Office is een onafhankelijk toegewijd multidisciplinair Personal Family & Business Office. Wij servicen, in tegenstelling tot de meeste andere offices, niet alleen de individuele relatie ( met eventueel zijn of haar familie) , maar ook de gelieerde onderneming(en). n dit op een zeer persoonlijke, pro actieve en discrete manier. Wj bieden een onderscheidend, compleet en excellent pakket aan van financiële, fiscale, bancaire, juridische en administratieve diensten.</p>
 			</div>
 		</div>
@@ -70,8 +70,8 @@ get_header();
 	<div class="container-xxl">
 		<div class="row">
 		<!-- <span class="vakgebied">Voorstellen </span> -->
-		<h2>Meet the team</h2>
-			<div class="sliderteam pt-5">
+		<h2 >Meet the team</h2>
+			<div class="sliderteam pt-5 pe-0">
 				<?php  
 				$args = array(
 					'post_type'      => 'team',
@@ -129,7 +129,7 @@ get_header();
 <div id="news">
 	<div class="container-xxl">
 		<div class="row">
-		<span>- informatie </span>
+		<span> informatie </span>
 		<h2>Laatste nieuws</h2>
 			<div class="slider">
 				<?php  

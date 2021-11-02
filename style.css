@@ -422,6 +422,13 @@ header {
 	background-color: #F8F9FB;
 	padding: 5% 10%;
 }
+.slick-next, .slick-prev{
+	transition: all .2s ease-in-out;
+}
+.slick-next:hover, .slick-prev:hover{
+	background-color: #F8F8F8!important;
+	color: var(--black-color)!important;
+}
 
 /* Team */
 #team {
@@ -466,6 +473,24 @@ header {
 .teamblock .teamcontent:hover {
 	background-color: var(--secondary-color);
 	transition: 0.4s;
+}
+
+.sliderteam .slick-prev, .sliderteam .slick-next{
+	position: absolute!important;
+	top: -30px;
+	right: 0;
+	border: none;
+	background-color: var(--secondary-color);
+	color: var(--white-color);
+	width: 45px;
+	height: 45px;
+}
+.sliderteam .slick-prev{
+	right: 55px;
+}
+
+.sliderteam{
+	position: relative;
 }
 
 
