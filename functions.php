@@ -74,7 +74,7 @@ add_action( 'after_setup_theme', 'website_custom_logo_setup' );
 add_theme_support( 'post-thumbnails' ); 
 
 
-/* Create post type chiefs */
+/* Create post type teammembers */
 function create_post_type() {
 	$supports = array(
         'title',
@@ -113,6 +113,46 @@ function create_post_type() {
     register_post_type('team', $args);
 }
 add_action('init', 'create_post_type');
+
+/* Create post type specialities */
+function create_post_type2() {
+	$supports = array(
+        'title',
+        'editor',
+        'thumbnail',
+        'excerpt',
+        'custom-fields',
+        'revisions',
+        'post-formats',
+    );
+    $labels = array(
+        'name' => 'Vakgebied',
+        'singular_name' => 'Vakgebied',
+        'menu_name' => 'Vakgebieden',
+        'name_admin_bar' => 'Vakgebied',
+        'add_new' => 'Toevoegen',
+        'add_new_item' => 'Voeg vakgebied toe',
+        'new_item' => 'Teamlid',
+        'edit_item' => 'Bewerk vakgebied',
+        'view_item' => 'Bekijk vakgebied',
+        'all_items' => 'Alle vakgebieden',
+        'search_items' => 'Zoek vakgebied',
+        'not_found' => 'Geen vakgebieden gevonden',
+    );
+    $args = array(
+        'supports' => $supports,
+        'labels' => $labels,
+        'public' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'vakgebieden'),
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-tag',
+        'hierarchical' => false,
+		'taxonomies'  => array( 'category' ),
+    );
+    register_post_type('vakgebied', $args);
+}
+add_action('init', 'create_post_type2');
 
 
 
