@@ -23,21 +23,29 @@ get_header();
 	<div class="bannerblocks">
 		<div class="container-xxl">
 			<div class="row">
-				<div class="col-md-3 p-4">
-					<span>Particulier & Familie</span>
-					<p>Alles wat hier staat is slechts om een indruk te geven</p>
-					<a href="#" class="read-more"> Lees meer</a>
-				</div>
-				<div class="col-md-3 p-4">
-					<span>Ondernemer & DGA & Personeel</span>
-					<p>Alles wat hier staat is slechts om een indruk te geven</p>
-					<a href="#" class="read-more"> Lees meer</a>
-				</div>
-				<div class="col-md-3 p-4">
-						<span>Intermediair</span>
-					<p>Alles wat hier staat is slechts om een indruk te geven</p>
-					<a href="#" class="read-more"> Lees meer</a>
-				</div>
+			<?php
+						$args = array(
+						'post_type'                     => 'post',
+						'child_of'                 => 0,
+						'parent'                   => '',
+						'orderby'                  => 'name',
+						'order'                    => 'ASC',
+						'hide_empty'               => 1,
+						'hierarchical'             => 1,
+						'pad_counts'               => false );
+						$categories = get_categories($args);
+					?>
+						<?php 
+						foreach ($categories as $category) {
+						?>
+							 <div class="col-md-3 p-5 d-flex flex-column justify-content-between">
+								<span><?php echo $category->name ?></span>
+								<p><?php echo wp_trim_words( $category->category_description, 15 ); ?></p>
+								<a href="<?php echo get_category_link( $category->term_id ) ?>" class="read-more"> Lees meer</a>
+							</div>
+							<?php
+						}
+						?>	
 				<div class="col-md-3">
 					
 				</div>

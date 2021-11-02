@@ -310,7 +310,7 @@ header {
 .read-more::before{
 	content: '';
 	position: absolute;
-	left: -45%;
+	left: -15%;
 	top: 50%;
 	width: 40px;
 	height: 2px;
@@ -481,11 +481,20 @@ header {
 	transition: 0.4s;
 }
 
+/* Category Archive */
+.bannerindexcontent{
+	color: var(--white-color);
+}
+
+.bannerindexcontent h1, .bannerindexcontent p, .bannerindexcontent p a{
+	color: var(--white-color);
+}
+
 /* Contact Page */
 #contact {
 	height: 100%;
 	background: linear-gradient(-90deg, var(--white-color) 40%, var(--sand-25) 15%, var(--sand-25) 55%);
-	}
+}
 
 #contact .contactimg img {
 	width: 100%;
