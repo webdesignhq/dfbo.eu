@@ -352,7 +352,7 @@ header {
 /* About Section */
 
 #about {
-	background: url('./img/startpagina.jpg') bottom right no-repeat;
+	background: url('./img/startpagina.jpg') bottom right no-repeat ;
 	padding-bottom: 250px;
 	margin-bottom: 50px;
 	margin-top: -35px;
@@ -475,7 +475,7 @@ header {
 	transition: 0.4s;
 }
 
-.sliderteam .slick-prev, .sliderteam .slick-next{
+.sliderteam .slick-prev, .sliderteam .slick-next, .slider .slick-prev, .slider .slick-next{
 	position: absolute!important;
 	top: -30px;
 	right: 30px;
@@ -485,11 +485,11 @@ header {
 	width: 45px;
 	height: 45px;
 }
-.sliderteam .slick-prev{
+.sliderteam .slick-prev, .slider .slick-prev{
 	right: 85px;
 }
 
-.sliderteam{
+.sliderteam, .slider{
 	position: relative;
 }
 
