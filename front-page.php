@@ -67,8 +67,7 @@ get_header();
 </div>
 
 <div id="team">
-	<div class="container-xxl">
-		<div class="row">
+		<div class="row col-11 offset-1">
 		<span class="vakgebied">Voorstellen </span>
 		<h2 >Meet the team</h2>
 			<div class="sliderteam pt-5 pe-0">
@@ -108,7 +107,6 @@ get_header();
 				wp_reset_query();
 			?>
 			</div>
-		</div>
 	</div>
 </div>
 
@@ -127,8 +125,7 @@ get_header();
 
 
 <div id="news">
-	<div class="container-xxl">
-		<div class="row">
+		<div class="row col-11 offset-1">
 		<span> informatie </span>
 		<h2>Laatste nieuws</h2>
 			<div class="slider">
@@ -154,7 +151,6 @@ get_header();
 				wp_reset_query();
 			?>
 			</div>
-		</div>
 	</div>
 </div>
 <?php

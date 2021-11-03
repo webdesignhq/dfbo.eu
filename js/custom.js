@@ -22,7 +22,7 @@ $(document).ready(function() {
 	  speed: 300,
 	  arrows: false,
 	  dots: false,
-	  slidesToShow: 3,
+	  slidesToShow: 2.5,
 	  slidesToScroll: 1,
 	  responsive: [
 		{

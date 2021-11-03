@@ -478,7 +478,7 @@ header {
 .sliderteam .slick-prev, .sliderteam .slick-next{
 	position: absolute!important;
 	top: -30px;
-	right: 0;
+	right: 30px;
 	border: none;
 	background-color: var(--secondary-color);
 	color: var(--white-color);
@@ -486,7 +486,7 @@ header {
 	height: 45px;
 }
 .sliderteam .slick-prev{
-	right: 55px;
+	right: 85px;
 }
 
 .sliderteam{
