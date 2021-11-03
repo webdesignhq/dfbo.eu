@@ -69,7 +69,7 @@ get_header();
 <div id="team">
 	<div class="container-xxl">
 		<div class="row">
-		<!-- <span class="vakgebied">Voorstellen </span> -->
+		<span class="vakgebied">Voorstellen </span>
 		<h2 >Meet the team</h2>
 			<div class="sliderteam pt-5 pe-0">
 				<?php  

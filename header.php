@@ -87,7 +87,7 @@
 	
 	<?php if(!is_page(5) && !is_category()) { ?>
 		<?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); ?>
-		<div id="bannerindex" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; background-size: cover; height: 400px;">
+		<div id="bannerindex" class="d-flex flex-column justify-content-center" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; background-size: cover; height: 400px;">
 		<div class="container-xxl">
 			<div class="product__container col-12 d-lg-flex d-block flex-row">
 				<div class="d-flex flex-column">
