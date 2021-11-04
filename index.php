@@ -6,7 +6,7 @@ Template Name: Contact
 <div id="contact-page" class="py-5">
 	<div class="container-fluid">
 		<div class="d-flex flex-row">
-			<div class="col-7 contactblock">
+			<div class="col-12 contactblock">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 							 
 				<?php the_content(); ?>

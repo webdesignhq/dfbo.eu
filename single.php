@@ -71,7 +71,7 @@ Template Name: Single Service
                                 $total = $total + 1;
                             }
 
-                            if($total > 1){
+                            if($total > 4){
                             ?>
                                 <div class="slidervakgebied d-flex">
                                     <?php 
@@ -92,6 +92,7 @@ Template Name: Single Service
                             <?php 
                             } else{ 
                             ?>
+							<div class="row p-5">
                                 <?php
                                 foreach ($posts as $post) {
                                 ?>
@@ -103,6 +104,7 @@ Template Name: Single Service
                                 <?php 
                                 } }
                         ?>
+						</div>
             
 	</div>
 </div>	
