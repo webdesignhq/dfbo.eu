@@ -29,7 +29,7 @@
 
 <body>
 	<header class="header p-4">
-			<div class="container-fluid">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-4 col-sm-6 text-center">
 					<div class="custom_logo">
@@ -40,15 +40,15 @@
 							?>
 					</div> 
 				</div>
-				<div class="col-lg-8 col-sm-6 text-right pe-5 d-flex flex-row" id="menu">
+				<div class="col-lg-7 col-sm-6 text-right pe-5" id="menu">
 					<button class="menu-toggle btn"><i class="fas fa-bars"></i></button>
 					<nav id="site-navigation" class="main-navigation">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 					</nav>
+				</div>
+				<div class="col-lg-1 col-sm-12 text-right pe-5" id="menu">
 					<div id="weglot_here"></div>
 				</div>
-				
-			</div>
 			</div>
 			<div class="mobile__menu--container d-lg-none d-block">
 				<div class="relative">
@@ -56,7 +56,8 @@
 						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 					</nav>
 				</div>
-			</div>		
+			</div>	
+		</div>			
 	</header>
 
 	<div id="diensten__overlay--container" class="d-flex flex-column justify-content-center">
