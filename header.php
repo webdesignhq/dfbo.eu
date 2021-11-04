@@ -40,13 +40,12 @@
 							?>
 					</div> 
 				</div>
-				<div class="col-lg-8 col-sm-6 text-right pe-5" id="menu">
+				<div class="col-lg-8 col-sm-6 text-right pe-5 d-flex flex-row" id="menu">
 					<button class="menu-toggle btn"><i class="fas fa-bars"></i></button>
 					<nav id="site-navigation" class="main-navigation">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-						<div id="weglot_here"></div>
 					</nav>
-					
+					<div id="weglot_here"></div>
 				</div>
 				
 			</div>

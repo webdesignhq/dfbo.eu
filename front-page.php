@@ -30,7 +30,7 @@ get_header();
 									'child_of'                 => 0,
 									'parent'                   => '',
 									'orderby'                  => 'name',
-									'order'                    => 'ASC',
+									'order'                    => 'DESC',
 									'hide_empty'               => 1,
 									'hierarchical'             => 1,
 									'pad_counts'               => false );
