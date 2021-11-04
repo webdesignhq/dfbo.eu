@@ -119,8 +119,8 @@ get_header();
 			<div class="container-fluid">
 				<div class="row text-center">
 					<div class="col-md-10 offset-md-2 serviceblock">
-					<span>Wat we doen</span>
-						<h3>Onze vakgebieden</h3>
+						<span><span class="read-more">Voorstellen</span></span>
+						<h3 class="fs-2">Onze vakgebieden</h3>
 						<p>Om u inzicht te geven in de werkzaamheden die wij o.a. voor u kunnen uitvoeren en de vakgebieden waarbij wij u kunnen begeleiden treft u onderstaand een uitwerking aan van de 8 hoofdgroepen waar wij intern mee werken. Het is geen limitatieve opsomming. Heeft u een vraagstuk over een onderwerp dat hier niet genoemd is, schroomt u dan niet om ons toch te benaderen. Door de zeer brede ervaring van onze trusted advisors kunnen wij u eigenlijk altijd van dienst zijn.</p>
 						<span><a class="btn btn-primary">Lees meer</a></span>
 					</div>
@@ -131,7 +131,7 @@ get_header();
 
 		<div id="news">
 				<div class="row col-11 offset-1">
-				<span> informatie </span>
+				<span class="read-more"> informatie </span>
 				<h2>Laatste nieuws</h2>
 					<div class="slider">
 						<?php  

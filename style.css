@@ -445,6 +445,15 @@ header {
 	
 }
 
+#services .read-more{
+	margin-left: 0!important;
+	color: var(--secondary-color)!important;
+}
+
+#services .read-more::before{
+	left: -40%!important;
+}
+
 .serviceblock {
 	background-color: #F8F9FB;
 	display: flex;
@@ -512,6 +521,10 @@ header {
 	height: 220px;
 }
 
+.teamblock .teamcontent ul li{
+	display: inline-block;
+}
+
 .teamblock .teamcontent span {
 	font-size: 20px;
 	color: var(--white-color);
@@ -562,6 +575,14 @@ header {
 
 #news .slick-track{
 	padding-top: 25px;
+}
+
+#news .read-more{
+	margin-left: 60px;
+}
+
+#news .read-more::before{
+	left: -2.5%!important;
 }
 
 .newsblock {
