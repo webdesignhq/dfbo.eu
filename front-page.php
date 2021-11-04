@@ -14,7 +14,7 @@ get_header();
 			<div class="row">
 				<div class="col-md-8">
 					<div class="bannercontent text-left p-4">
-						<h1>Wij hebben de focus op PRO actief<br>Samenwerking <span> & </span> vertrouwen</h1>
+						<h1 class="mb-4">Wij hebben de focus op PRO actief<br>Samenwerking <span> & </span> vertrouwen</h1>
 						<span>Dit is een faketekst. Alles wat hier staat is slechts om een indruk te geven van het grafische effect van tekst op deze plek.</span>
 					</div>
 				</div>
@@ -23,9 +23,9 @@ get_header();
 	<div class="bannerblocks">
 		<div class="container-xxl">
 			<div class="row">
-			<?php
+					<?php
 						$args = array(
-						'post_type'                     => 'post',
+						'post_type'                => 'post',
 						'child_of'                 => 0,
 						'parent'                   => '',
 						'orderby'                  => 'name',
@@ -40,7 +40,7 @@ get_header();
 						?>
 							 <div class="col-md-3 p-5 d-flex flex-column justify-content-between">
 								<span><?php echo $category->name ?></span>
-								<p><?php echo wp_trim_words( $category->category_description, 15 ); ?></p>
+								<p class="pt-3"><?php echo wp_trim_words( $category->category_description, 15 ); ?></p>
 								<a href="<?php echo get_category_link( $category->term_id ) ?>" class="read-more"> Lees meer</a>
 							</div>
 							<?php
@@ -57,7 +57,7 @@ get_header();
 <div id="about">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-7 aboutblock">
+			<div class="col-md-8 aboutblock">
 				<span class="vakgebied">Voorstellen </span>
 				<h2 class="mt-3">De Dutch Family Business Office</h2>
 				<p>De Dutch Familiy Business Office is een onafhankelijk toegewijd multidisciplinair Personal Family & Business Office. Wij servicen, in tegenstelling tot de meeste andere offices, niet alleen de individuele relatie ( met eventueel zijn of haar familie) , maar ook de gelieerde onderneming(en). n dit op een zeer persoonlijke, pro actieve en discrete manier. Wj bieden een onderscheidend, compleet en excellent pakket aan van financiële, fiscale, bancaire, juridische en administratieve diensten.</p>
@@ -113,7 +113,7 @@ get_header();
 <div id="services">
 	<div class="container-fluid">
 		<div class="row text-center">
-			<div class="col-md-8 offset-md-4 serviceblock">
+			<div class="col-md-10 offset-md-2 serviceblock">
 			<span>Wat we doen</span>
 				<h3>Onze vakgebieden</h3>
 				<p>Om u inzicht te geven in de werkzaamheden die wij o.a. voor u kunnen uitvoeren en de vakgebieden waarbij wij u kunnen begeleiden treft u onderstaand een uitwerking aan van de 8 hoofdgroepen waar wij intern mee werken. Het is geen limitatieve opsomming. Heeft u een vraagstuk over een onderwerp dat hier niet genoemd is, schroomt u dan niet om ons toch te benaderen. Door de zeer brede ervaring van onze trusted advisors kunnen wij u eigenlijk altijd van dienst zijn.</p>
@@ -137,9 +137,12 @@ get_header();
 
 				$loop = new WP_Query( $args );
 
-				while ( $loop->have_posts() ) : $loop->the_post(); ?>
-					 <div class="newsblock p-4 m-4">
+				while ( $loop->have_posts() ) : $loop->the_post(); 
+					$authorID=get_the_author_meta('ID');
+				?>
+					 <div class="newsblock p-5 m-4">
 						<?php global $post; ?>
+						<?php echo get_avatar( get_the_author_meta( $authorID ) , 16 ); ?>
 						<span><?php echo get_the_date(); ?></span>
 						<h3><a href="<?php echo get_permalink();?>"> <?php echo get_the_title(); ?></a></h3>
 						<p><?php echo the_excerpt(); ?></p>

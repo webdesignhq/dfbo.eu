@@ -1,9 +1,12 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: Contact
+*/ get_header(); ?>
 
-<div id="content" class="py-5">
-	<div class="container-xl">
+<div id="contact-page" class="py-5">
+	<div class="container-fluid">
 		<div class="d-flex flex-row">
-			<div class="d-flex flex-column">
+			<div class="col-7 contactblock">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 							 
 				<?php the_content(); ?>
@@ -22,8 +25,6 @@
 		
 		</div>
 	</div>	
-</div>	
-	
 
 <?php
 get_footer();

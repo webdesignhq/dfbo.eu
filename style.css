@@ -360,15 +360,16 @@ header {
 
 #about {
 	background: url('./img/startpagina.png') bottom right no-repeat;
-	padding-bottom: 250px;
+	padding-bottom: 350px;
 	margin-bottom: 50px;
 	margin-top: -35px;
 }
 
 .aboutblock {
 	background-color: #F8F9FB;
-	padding: 5% 10%;
-	border-top: 8px solid #ef7726;
+	padding: 10% 15%;
+	border-top: solid 10px var(--secondary-color);
+	margin-top: 35px;
 }
 
 .aboutblock span {
@@ -421,14 +422,26 @@ header {
 #services {
 	background-image: url('./img/bg-vakgebieden.png');
 	filter: grayscale(100);
-	padding-bottom: 250px;
-	margin-bottom: 50px;
+	padding-bottom: 350px;
+	/* margin-bottom: 50px; */
+	
 }
 
 .serviceblock {
 	background-color: #F8F9FB;
-	padding: 5% 10%;
+	display: flex;
+	padding: 125px 10%;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 650px;
+	margin-top: -200px;
 }
+
+.serviceblock p{
+	color: #A4A4A4;
+	line-height: 40px;
+}
+
 .slick-next, .slick-prev{
 	transition: all .2s ease-in-out;
 }
@@ -440,6 +453,7 @@ header {
 /* Team */
 #team {
 	padding: 100px 0;
+	margin-bottom: 200px;
 }
 
 #team a {
@@ -504,7 +518,7 @@ header {
 /* News */
 #news {
 	background-color: var(--primary-color);
-	padding: 100px 0;
+	padding: 10% 0;
 }
 
 #news a {
@@ -520,8 +534,22 @@ header {
 	color: var(--white-color);
 }
 
+#news .slick-track{
+	padding-top: 25px;
+}
+
 .newsblock {
 	background-color: var(--white-color);
+	position: relative;
+}
+
+.newsblock .avatar{
+	position: absolute;
+	top: -50px;
+	right: 50px;
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
 }
 
 .newsblock img {
@@ -546,6 +574,10 @@ header {
 .newsblock .newscontent:hover {
 	background-color: var(--secondary-color);
 	transition: 0.4s;
+}
+
+.slider{
+	padding-right: unset;
 }
 
 /* Category Archive */
@@ -573,16 +605,15 @@ header {
 .bannerindexcontent h1, .bannerindexcontent p, .bannerindexcontent p a{
 	color: var(--white-color);
 }
-.inleiding{
-
+.inleiding p{
+	color: #A4A4A4;
 }
 
 #category__container, #category__about__container{
-	padding-left: 250px;
-	padding-right: 250px;
-	padding-top: 125px;
-	padding-bottom: 125px;
+	padding: 10% 15%;
 	z-index: -50;
+	background-color: #F8F9FB;
+	border-top: solid 10px var(--secondary-color) ;
 }
 
 #category__container--image{
@@ -591,7 +622,7 @@ header {
 	background-repeat: no-repeat;
 	background-size: contain;
 	height: 800px;
-	margin-top: -500px;
+	margin-top: -350px;
 	z-index: -99;
 	position: relative;
 	filter: grayscale(100%);
@@ -601,6 +632,7 @@ header {
 	padding-top: 125px;
 	padding-bottom: 175px;
 	background-color: var(--primary-color);
+	margin-bottom: 200px;
 }
 
 .cat__post{
@@ -659,8 +691,81 @@ header {
 	width: 100%!important;
 }
 
+/* Single post */
+#inleiding{
+	padding: 90px 0;
+    background: url(./img/startpagina.png) no-repeat;
+	background-position: -50% 50%;
+}
+
+.inleidingcontent{
+	padding: 10% 15%;
+	background-color: #F8F9FB;
+}
+
+.inleidingcontent p{
+	color: #A4A4A4;
+}
+
+#activiteiten{
+	background-color: #fff;
+	padding: 100px 20%;
+}
+
+#activiteiten h2{
+	width: 75%;
+}
+
+#activiteiten p{
+	color: #A4A4A4;
+}
+
+#contact{
+	background-color: #F8F9FB;
+	padding: 100px 20%;
+}
+
+#single-related{
+	background-color: var(--secondary-color);
+}
+
+#single-related h2, #single-related  p, #single-related span, #single-related h3, #single-related a{
+	color: var(--white-color)!important;
+}
+#single-related .read-more::before{
+	background-color: var(--white-color);
+}
+
+#single-related .slidervakgebied{
+	position: relative;
+	width: 95%;
+	margin-left: 5%;
+}
+
+#single-related .slidervakgebied .slick-prev, #single-related .slidervakgebied .slick-next{
+	position: absolute!important;
+	bottom: -50px;
+	right: 30px;
+	border: none;
+	background-color: var(--primary-color);
+	color: var(--white-color);
+	width: 45px;
+	height: 45px;
+}
+#single-related .slidervakgebied .slick-prev:hover, #single-related .slidervakgebied .slick-next:hover{
+	background-color: var(--white-color)!important;
+	color: var(--secondary-color)!important;
+}
+#single-related .slidervakgebied .slick-prev{
+	right: 80px;
+}
+
+.sliderteam, .slider{
+	position: relative;
+}
+
 /* Contact Page */
-#contact {
+#contact-page #contact {
 	background: url('./img/startpagina.png') bottom right no-repeat;
 	padding-bottom: 250px;
 	margin-bottom: 50px;

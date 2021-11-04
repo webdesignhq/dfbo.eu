@@ -3,7 +3,7 @@
 Template Name: Contact
 */ get_header(); ?>
 
-<div id="contact" class="py-5">
+<div id="contact contact-page" class="py-5">
 	<div class="container-fluid">
 		<div class="d-flex flex-row">
 			<div class="col-7 contactblock">

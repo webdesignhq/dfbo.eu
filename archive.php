@@ -3,11 +3,10 @@
 Template Name: Archives
 */
 get_header(); ?>
-<div id="category__container" style="background: linear-gradient(
-		270deg, rgba(0,0,0,0) 30%, #F8F9FB  20%, #F8F9FB  50%);">
+<div id="category__container" class="col-8">
 <div class="container-xxl p-5">
     <div class="row">
-        <div class="col-7 inleiding">
+        <div class="col-12 inleiding">
             <span class="vakgebied">vakgebieden</span>
             <h2 class="mt-3">Vakgebied: <?php echo single_term_title(); ?> </h2>
             <p><?php echo category_description(); ?></p>
@@ -86,9 +85,11 @@ get_header(); ?>
 <div id="services">
 	<div class="container-fluid">
 		<div class="row text-center">
-			<div class="col-md-8 offset-md-4 serviceblock">
-			<span>Wat we doen</span>
+			<div class="col-md-10 offset-md-2 serviceblock">
+                <div>
+			    <span>Wat we doen</span>
 				<h3>Onze vakgebieden</h3>
+                </div>
 				<p>Om u inzicht te geven in de werkzaamheden die wij o.a. voor u kunnen uitvoeren en de vakgebieden waarbij wij u kunnen begeleiden treft u onderstaand een uitwerking aan van de 8 hoofdgroepen waar wij intern mee werken. Het is geen limitatieve opsomming. Heeft u een vraagstuk over een onderwerp dat hier niet genoemd is, schroomt u dan niet om ons toch te benaderen. Door de zeer brede ervaring van onze trusted advisors kunnen wij u eigenlijk altijd van dienst zijn.</p>
 				<a href="btn btn-primary">Lees meer</a>
 			</div>
@@ -96,36 +97,8 @@ get_header(); ?>
 	</div>
 </div>
 
-<div id="news">
-	<div class="container-xxl">
-		<div class="row">
-		<span>- informatie </span>
-		<h2>Laatste nieuws</h2>
-			<div class="slider">
-				<?php  
-				$args = array(
-					'post_type'      => 'post',
-					'posts_per_page' => 10
-				);
-
-				$loop = new WP_Query( $args );
-
-				while ( $loop->have_posts() ) : $loop->the_post(); ?>
-					 <div class="newsblock p-4 m-4">
-						<?php global $post; ?>
-						<span><?php echo get_the_date(); ?></span>
-						<h3><a href="<?php echo get_permalink();?>"> <?php echo get_the_title(); ?></a></h3>
-						<p><?php echo the_excerpt(); ?></p>
-						<a href="<?php echo get_permalink();?>">Meer info</a>
-					</div>
-		
-				<?php endwhile;
-
-				wp_reset_query();
-			?>
-			</div>
-		</div>
-	</div>
+<!--  -->
+</div>
 <!-- #container -->
 
 <?php get_footer(); ?>
