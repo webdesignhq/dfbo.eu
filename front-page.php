@@ -1,12 +1,18 @@
 <?php
 /* Template Name: Homepagina */
+$headerVideo = get_field('header_video', 'option');
+preg_match('/src="(.+?)"/', $headerVideo, $matches);
+
+$src = $matches[1];
+
+
 
 get_header();
 ?>
 <?php is_front_page(); ?>
 
 			<video autoplay muted loop id="videobg">
-			<source src="<?php echo get_stylesheet_directory_uri();?>/video/header.webm" type="video/webm">
+			<source src="<?php echo $src;?>" type="video/webm">
 			</video>
 			<div id="banner">
 				<div class="overlay">
@@ -30,7 +36,7 @@ get_header();
 									'child_of'                 => 0,
 									'parent'                   => '',
 									'orderby'                  => 'name',
-									'order'                    => 'ASC',
+									'order'                    => 'DESC',
 									'hide_empty'               => 1,
 									'hierarchical'             => 1,
 									'pad_counts'               => false );
@@ -116,7 +122,7 @@ get_header();
 					<span>Wat we doen</span>
 						<h3>Onze vakgebieden</h3>
 						<p>Om u inzicht te geven in de werkzaamheden die wij o.a. voor u kunnen uitvoeren en de vakgebieden waarbij wij u kunnen begeleiden treft u onderstaand een uitwerking aan van de 8 hoofdgroepen waar wij intern mee werken. Het is geen limitatieve opsomming. Heeft u een vraagstuk over een onderwerp dat hier niet genoemd is, schroomt u dan niet om ons toch te benaderen. Door de zeer brede ervaring van onze trusted advisors kunnen wij u eigenlijk altijd van dienst zijn.</p>
-						<a href="btn btn-primary">Lees meer</a>
+						<span><a class="btn btn-primary">Lees meer</a></span>
 					</div>
 				</div>
 			</div>
@@ -139,7 +145,7 @@ get_header();
 						while ( $loop->have_posts() ) : $loop->the_post(); 
 							$authorID=get_the_author_meta('ID');
 						?>
-							<div class="newsblock p-5 m-4">
+							<div class="newsblock p-5 my-5 me-5">
 								<?php global $post; ?>
 								<?php echo get_avatar( get_the_author_meta( $authorID ) , 16 ); ?>
 								<span><?php echo get_the_date(); ?></span>

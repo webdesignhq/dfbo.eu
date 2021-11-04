@@ -23,17 +23,7 @@ Template Name: Single Service
 		<div class="container-xxl">
 			<div class="d-flex flex-row">
 				<div class="d-flex flex-column">
-						<h2> Activiteiten die binnen ons kantoor onder deze hoofdgroep plaatsvinden zijn o.a.: </h2>
-						<p class="pt-4">
-						* Opstellen van Estate Planning plannen en de daaraan gekoppelde eventuele vermogensoverdracht </br>
-						* Het opstellen testamenten en volmachten (levenstestamenten) </br>
-						* Het opstellen van huwelijkse voorwaarden en samenlevingsovereenkomsten </br>
-						* Nalatenschapsplanning * Afwikkeling nalatenschap c.q. erfenis </br>
-						* Berekening erfbelasting </br>
-						* Bewindvoering </br>
-						* Opzetten van schenkingsstrategie </br>
-						* Gebruik levensverzekeringen voor vermogensoverdracht</br>
-						</p>
+					<?php the_content(); ?>
 				</div>
 			</div>
 		</div>	

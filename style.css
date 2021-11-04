@@ -114,7 +114,7 @@ a:hover {
 	color: var(--white-color);
 	border-radius: 0;
 	border: none;
-	padding: 10px 40px 10px 20px;
+	padding: 10px 60px 10px 60px;
 	font-family: var(--primary-font);
 	transition: 0.4s;
 	position: relative;
@@ -127,11 +127,11 @@ a:hover {
 
 
 .btn-secondary { 
-	background-color: var(--primary-color);
-	color: var(--white-color);
+	background-color: var(--white-color);
+	color: var(--primary-color);
 	border-radius: 0;
 	border: none;
-	padding: 10px 40px 10px 20px;
+	padding: 10px 60px 10px 60px;
 	font-family: var(--primary-font);
 	transition: 0.4s;
 	position: relative;
@@ -271,8 +271,7 @@ header {
 }
 
 /* Banner Section */
-
-#videobg {
+#videobg, .wp-video {
   position: absolute;
   right: 0;
   top: 0;
@@ -429,7 +428,7 @@ header {
 
 #services {
 	background-image: url('./img/bg-vakgebieden.png');
-	filter: grayscale(100);
+	/* filter: grayscale(100); */
 	padding-bottom: 350px;
 	/* margin-bottom: 50px; */
 	

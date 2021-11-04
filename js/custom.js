@@ -150,7 +150,7 @@ $(document).ready(function() {
         $(".mobile__menu--container").toggleClass('mobile-active')
     });
 
-	$(".menu-item-52").click(function(e) {
+	$(".menu-item-83").click(function(e) {
 		e.preventDefault();
 		console.log('aesfa')
 		$("#diensten__overlay--container").toggleClass('diensten--active')

@@ -81,6 +81,11 @@ get_header(); ?>
     </div>
 </div>
 
+<?php 
+    $queried_object = get_queried_object();
+    $cat_content = get_field('categorie_content', $queried_object);
+    var_dump($cat_content);
+?>
 
 <div id="services">
 	<div class="container-fluid">
@@ -90,8 +95,8 @@ get_header(); ?>
 			    <span>Wat we doen</span>
 				<h3>Onze vakgebieden</h3>
                 </div>
-				<p>Om u inzicht te geven in de werkzaamheden die wij o.a. voor u kunnen uitvoeren en de vakgebieden waarbij wij u kunnen begeleiden treft u onderstaand een uitwerking aan van de 8 hoofdgroepen waar wij intern mee werken. Het is geen limitatieve opsomming. Heeft u een vraagstuk over een onderwerp dat hier niet genoemd is, schroomt u dan niet om ons toch te benaderen. Door de zeer brede ervaring van onze trusted advisors kunnen wij u eigenlijk altijd van dienst zijn.</p>
-				<a href="btn btn-primary">Lees meer</a>
+				<p><?php echo $cat_content; ?></p>
+				<span><a class="btn btn-primary">Lees meer</a></span>
 			</div>
 		</div>
 	</div>

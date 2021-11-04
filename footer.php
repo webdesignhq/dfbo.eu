@@ -11,13 +11,15 @@
  * @since 1.0.0
  */
 
+$image = get_field('footer_logo', 'option');
+
 ?>
 <footer>
 <div id="ctabanner">
 	<div class="container-xxl">
 		<div class="row text-center">
 		<h2>Benieuwd naar wat <strong>wij</strong> voor <strong>u</strong> kunnen betekenen?</h2>
-		<a href="#" class="btn btn-primary">Contact opnemen</a>
+		<span><a href="#" class="btn btn-secondary mt-4">Contact opnemen</a></span>
 		</div>
 	</div>
 </div>
@@ -26,20 +28,20 @@
 			<div class="row pt-5 pb-5">
 				<div class="col-md-3 small-12 columns">
 					<div class="custom_logo">
-						<img src="">
+						<img src="<?php echo $image; ?>">
 					</div>
 				</div>
-				<div class="col-md-3 small-12 columns">
+				<div class="col-md-2  offset-1  small-12 columns">
 					<strong>Diensten</strong></li>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 				</div>
-				<div class="col-md-3 small-12 columns">
+				<div class="col-md-2 offset-1 small-12 columns">
 					<strong>Meer informatie</strong>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 
 	
 				</div>
-				<div class="col-md-3 small-12 columns">
+				<div class="col-md-2 offset-1 small-12 columns">
 					<ul>
 						<li><strong>Contactgegevens</strong></li>
 					</ul>
