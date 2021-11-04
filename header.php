@@ -47,8 +47,6 @@
 					<nav id="site-navigation" class="main-navigation me-4">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 					</nav>
-				</div>
-				<div class="col-lg-1 col-sm-12 text-right pe-5" id="menu">
 					<div id="weglot_here"></div>
 				</div>
 

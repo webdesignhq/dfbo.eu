@@ -145,6 +145,11 @@ a:hover {
 
 .read-more {
 	position: relative;
+	transition: .2s ease-in;
+}
+
+.read-more:hover{
+	color: var(--secondary-color)!important;
 }
 
 .swiper{
@@ -383,6 +388,12 @@ header {
 	color: var(--secondary-color);
 }
 
+.aboutblock p{
+	color: #A4A4A4;
+	line-height: 40px;
+	margin-top: 50px;
+}
+
 /* Excellences Section */
 #excellences {
 	background-color: var( --sand-25);
@@ -471,6 +482,14 @@ header {
 #team h2 {
 	text-transform: initial;
 	color: var(--primary-color);
+}
+
+#team .vakgebied{
+	margin-left: 50px!important;
+}
+
+#team .vakgebied::before{
+	left: -2%!important;
 }
 
 .teamblock {
@@ -704,7 +723,7 @@ header {
 
 /* Single post */
 #inleiding{
-	padding: 90px 0;
+	padding: 75px 0;
     background: url(./img/startpagina.png) no-repeat;
 	background-position: -50% 50%;
 }
@@ -831,6 +850,15 @@ header {
 	color: var(--white-color);
 }
 
+.banner-secondary{
+	background-color: var(--primary-color)!important;
+	padding: 100px 0!important;
+}
+
+.banner-secondary h2{
+	color: var(--white-color);
+}
+
 
 /* Menu*/
 
@@ -907,14 +935,14 @@ header {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
-	color: var(--white-color);
+	color: var(--white-color)!important;
 	font-size: 20px;
 	-webkit-transition: all 0.4;
 	transition: all 0.4s	
 }
 
 .main-navigation a:hover {
-	color: var(--white-color);
+	color: var(--secondary-color)!important;
 }
 .main-navigation ul ul {
 	float: left;

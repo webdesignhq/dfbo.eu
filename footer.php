@@ -15,6 +15,7 @@ $image = get_field('footer_logo', 'option');
 
 ?>
 <footer>
+<?php if(!is_page('39') && !is_single()) { ?>
 <div id="ctabanner">
 	<div class="container-xxl">
 		<div class="row text-center">
@@ -23,6 +24,18 @@ $image = get_field('footer_logo', 'option');
 		</div>
 	</div>
 </div>
+<?php } 
+elseif(is_single()) { ?>
+	<div id="ctabanner " class="banner-secondary">
+		<div class="container-xxl">
+			<div class="row text-center">
+			<h2>Benieuwd naar wat <strong>wij</strong> voor <strong>u</strong> kunnen betekenen?</h2>
+			<span><a href="#" class="btn btn-secondary mt-4">Contact opnemen</a></span>
+			</div>
+		</div>
+	</div>
+<?php } ?>
+
 	<div id="footer">
 		<div class="container-xxl">
 			<div class="row pt-5 pb-5">

@@ -82,9 +82,13 @@ get_header(); ?>
 </div>
 
 <?php 
-    $queried_object = get_queried_object();
-    $cat_content = get_field('categorie_content', $queried_object);
-    var_dump($cat_content);
+    $queried_object = get_queried_object(); 
+    $taxonomy = $queried_object->taxonomy;
+    $term_id = $queried_object->term_id;  
+
+    $cat = $taxonomy . '_' . $term_id;
+
+    $cat_content = get_field('categorie_content', $cat);
 ?>
 
 <div id="services">
