@@ -503,11 +503,12 @@ header {
 
 .teamblock {
 	background-color: var(--white-color);
+	border-top: solid 8px var(--secondary-color);
+	transition: all .3s ease-in;
 }
 
 .teamblock img {
 	width: 100%;
-	border-top: 8px solid #ef7726;
 }
 
 .teamblock p {
@@ -522,7 +523,20 @@ header {
 }
 
 .teamblock .teamcontent ul li{
-	display: inline-block;
+	float: left!important;
+	padding-right: 25px;
+}
+
+.teamcontent ul li::marker{
+	color: var(--secondary-color)!important;
+}
+
+.teamblock:hover ul li::marker{
+	color: var(--primary-color)!important;
+}
+
+.teamblock:hover{
+	border-top: solid 8px var(--primary-color);
 }
 
 .teamblock .teamcontent span {
@@ -530,7 +544,7 @@ header {
 	color: var(--white-color);
 }
 
-.teamblock .teamcontent:hover {
+.teamblock:hover .teamcontent {
 	background-color: var(--secondary-color);
 	transition: 0.4s;
 }
