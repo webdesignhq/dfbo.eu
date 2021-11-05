@@ -1,12 +1,12 @@
 <?php
 /*
-Template Name: Contact
+Template Name: About Us
 */ get_header(); ?>
 
 <div id="contact-page" class="py-5">
 	<div class="container-fluid">
 		<div class="d-flex flex-row">
-			<div class="col-10 offset-1 contactblock">
+			<div class="col-8 offset-1 contactblock">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 							 
 				<?php the_content(); ?>
