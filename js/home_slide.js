@@ -23,7 +23,26 @@ $(document).ready(function() {
 
     });
 
-    
+//     let tl = gsap.timeline({
+//         scrollTrigger: {
+//             trigger: '#section-2',
+//             start: 'top bottom',
+//             ease: 'linear',
+//             markers: true
+//         }
+//     });
+//     tl.from('#about', 1 ,{
+//         backgroundPosition: '100% 700px'
+//     })
+//     .from('.aboutblock', 1, {
+//         top: '-400px'
+//     },'-=1');
+// });
 
-
-});
+        //     onLeave: () => gsap.to('#about', .01 ,{
+        //         backgroundPosition: '100% 700px'
+        //     })
+        //     .to('.aboutblock', .01, {
+        //         top: '-400px'
+        //     },'-=1')
+        // }
