@@ -279,6 +279,10 @@ header {
 	border-right: unset;
 }
 
+#fp-nav ul li a span{
+	background-color: var(--secondary-color)!important;
+}
+
 /* Banner Section */
 #videobg, .wp-video {
   position: absolute;
