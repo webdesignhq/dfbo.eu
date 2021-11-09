@@ -1,12 +1,15 @@
 <?php
 /*
 Template Name: About Us
-*/ get_header(); ?>
+*/ get_header(); 
 
-<div id="contact-page" class="py-5">
-	<div class="container-fluid">
+$headerVideo = get_field('about_image');
+?>
+
+<div id="contact-page">
+	<div class="container-fluid p-0">
 		<div class="d-flex flex-row">
-			<div class="col-8 offset-1 contactblock">
+			<div class="col-8 contactblock">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 							 
 				<?php the_content(); ?>
@@ -20,9 +23,10 @@ Template Name: About Us
 				 
 				<?php endif; ?>
 				 
-				<p align="center"><?php posts_nav_link(); ?></p>
 			</div>
-		
+			<div class="col-4">
+				<img src="<?php echo $headerVideo; ?>" style="width: 100%; height: 100%; object-fit: cover;"/>
+			</div>
 		</div>
 	</div>	
 

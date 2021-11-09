@@ -11,7 +11,7 @@ get_header();
 ?>
 <?php is_front_page(); ?>
 
-			<video autoplay muted loop id="videobg">
+			<video autoplay muted loop id="videobg" style="filter: grayscale(100%);">
 			<source src="<?php echo $src;?>" type="video/webm">
 			</video>
 			<div id="banner">
@@ -150,7 +150,7 @@ get_header();
 								<?php echo get_avatar( get_the_author_meta( $authorID ) , 16 ); ?>
 								<span><?php echo get_the_date(); ?></span>
 								<h3><a href="<?php echo get_permalink();?>"> <?php echo get_the_title(); ?></a></h3>
-								<p><?php echo the_excerpt(); ?></p>
+								<p><?php echo wp_trim_words(get_the_excerpt(), 30); ?></p>
 								<a href="<?php echo get_permalink();?>">Meer info</a>
 							</div>
 				
