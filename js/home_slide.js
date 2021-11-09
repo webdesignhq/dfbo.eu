@@ -49,7 +49,7 @@ $(document).ready(function() {
             start: 'top top',
             end: "+=45% +=20%",
             ease: 'linear',
-            markers: true,
+            markers: false,
             scrub: true
         }
     });
