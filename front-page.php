@@ -10,11 +10,12 @@ $src = $matches[1];
 get_header();
 ?>
 <?php is_front_page(); ?>
-
+<div id="fullpage">
+		<div class="section">
 			<video autoplay muted loop id="videobg" style="filter: grayscale(100%);">
 			<source src="<?php echo $src;?>" type="video/webm">
 			</video>
-			<div id="banner">
+			<div id="banner" class="panel">
 				<div class="overlay">
 				</div>
 					<div class="container-xxl">
@@ -60,7 +61,9 @@ get_header();
 					</div>
 				</div>
 			</div>
-			<div id="about" >
+		</div>
+		<div class="section">
+			<div id="about" class="panel">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-md-8 aboutblock">
@@ -71,7 +74,9 @@ get_header();
 					</div>
 				</div>
 			</div>
-			<div id="team">
+		</div>
+		<div class="section" id="normal-scroll">
+			<div id="team"class="panel">
 				<div class="row col-11 offset-1">
 					<span class="vakgebied">Voorstellen </span>
 					<h2 >Meet the team</h2>
@@ -114,7 +119,7 @@ get_header();
 					</div>
 				</div>
 			</div>
-		</div>							
+
 		<div id="services">
 			<div class="container-fluid">
 				<div class="row text-center">
@@ -161,6 +166,7 @@ get_header();
 					</div>
 			</div>
 		</div>
+	</div>
 	</div>
 <?php
 get_footer();

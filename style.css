@@ -641,6 +641,12 @@ header {
 	padding-right: unset;
 }
 
+
+/* Snapping */
+.panel{
+	scroll-snap-align: start;
+}
+
 /* Category Archive */
 .bannerindexcontent{
 	color: var(--white-color);
@@ -1128,5 +1134,19 @@ left: 0;
 		border: none;
 		background: transparent;
 		box-shadow: none;
-	}	
+	}
+	
+	.main-navigation a{
+		color: var(--black-color)!important;
+	}
+
+	.dienst{
+		width: 100%;
+		padding: 15px;
+	}
+
+	.overlay, .bannerblocks{
+		position: relative!important;
+	}
+
 }
