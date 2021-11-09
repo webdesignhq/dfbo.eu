@@ -27,6 +27,10 @@
 	color: var(--white-color)
 }
 
+html{
+	overflow-x: hidden!important;
+}
+
 body {
 	  overflow-x: hidden;
 }
@@ -479,7 +483,7 @@ header {
 
 /* Team */
 #team {
-	padding: 100px 0;
+	padding: 150px 0;
 	margin-bottom: 200px;
 }
 
