@@ -12,7 +12,7 @@ get_header();
 <?php is_front_page(); ?>
 <div id="fullpage">
 		<div class="section" id="section-1" style="z-index: 99;">
-			<video autoplay muted loop id="videobg" style="filter: grayscale(100%);">
+			<video autoplay muted loop data-autoplay id="videobg" style="filter: grayscale(100%);">
 			<source src="<?php echo $src;?>" type="video/webm">
 			</video>
 			<div id="banner" class="panel">
