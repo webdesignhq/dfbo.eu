@@ -96,7 +96,8 @@ get_header();
 									<img src="<?php echo $image[0]; ?>">
 									<?php global $post; ?>
 									<div class="teamcontent">
-										<span><?php echo get_the_title(); ?></span><br><br>
+										<span><?php echo get_the_title(); ?></span><br>
+										<span class="team-subtitle"><?php echo get_field('team_subtitle', $post->ID); ?></span><br><br>
 										<?php
 											$specialities_rows = get_field('specialities');
 												if($specialities_rows)

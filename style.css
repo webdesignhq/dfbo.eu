@@ -501,6 +501,11 @@ header {
 	color: var(--primary-color);
 }
 
+#team .team-subtitle{
+	font-size: 12px;
+	font-style: italic;
+}
+
 #team .vakgebied{
 	margin-left: 50px!important;
 }
