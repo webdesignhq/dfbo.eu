@@ -22,8 +22,7 @@ get_header();
 						<div class="row">
 							<div class="col-md-8">
 								<div class="bannercontent text-left p-4">
-									<h1 class="mb-4">Wij hebben de focus op PRO actief<br>Samenwerking <span> & </span> vertrouwen</h1>
-									<span>Dit is een faketekst. Alles wat hier staat is slechts om een indruk te geven van het grafische effect van tekst op deze plek.</span>
+									<h1 class="mb-4">Wij hebben de focus op PRO actief<br>Samenwerking <span> & </span> vertrouwen</h1>	
 								</div>
 							</div>
 						</div>

@@ -283,6 +283,15 @@ header {
 	background-color: var(--secondary-color)!important;
 }
 
+
+.country-selector.weglot-dropdown {
+	background-color: unset !important;
+}
+
+.country-selector.weglot-dropdown .wgcurrent {
+	border: none !important;
+}
+
 /* Banner Section */
 #videobg, .wp-video {
   position: absolute;
