@@ -22,7 +22,7 @@ get_header();
 						<div class="row">
 							<div class="col-md-8">
 								<div class="bannercontent text-left p-4">
-									<h1 class="mb-4">Wij hebben de focus op PRO actief<br>Samenwerking <span> & </span> vertrouwen</h1>	
+									<h1 class="mb-4">Wij hebben de focus op PRO actief<br>Samenwerking <span> & </span> vertrouwen</h1>
 								</div>
 							</div>
 						</div>
@@ -68,7 +68,7 @@ get_header();
 						<div class="col-md-8 aboutblock" style="position: absolute; top:0px; left:0;" >
 							<span class="vakgebied">Voorstellen </span>
 							<h2 class="mt-3">De Dutch Family Business Office</h2>
-							<p>De Dutch Familiy Business Office is een onafhankelijk toegewijd multidisciplinair Personal Family & Business Office. Wij servicen, in tegenstelling tot de meeste andere offices, niet alleen de individuele relatie ( met eventueel zijn of haar familie) , maar ook de gelieerde onderneming(en). n dit op een zeer persoonlijke, pro actieve en discrete manier. Wj bieden een onderscheidend, compleet en excellent pakket aan van financiële, fiscale, bancaire, juridische en administratieve diensten.</p>
+							<p><?php echo the_content(); ?></p>
 						</div>
 					</div>
 				</div>
@@ -78,7 +78,7 @@ get_header();
 			<div id="team"class="panel">
 				<div class="row col-11 offset-1">
 					<span class="vakgebied">Voorstellen </span>
-					<h2 >Meet the team</h2>
+					<h2>Meet the team</h2>
 						<div class="sliderteam pt-5 pe-0">
 							<?php  
 							$args = array(
@@ -95,8 +95,7 @@ get_header();
 									<img src="<?php echo $image[0]; ?>">
 									<?php global $post; ?>
 									<div class="teamcontent">
-										<span><?php echo get_the_title(); ?></span><br>
-										<span class="team-subtitle"><?php echo get_field('team_subtitle', $post->ID); ?></span><br><br>
+										<span><?php echo get_the_title(); ?></span><br><br>
 										<?php
 											$specialities_rows = get_field('specialities');
 												if($specialities_rows)
