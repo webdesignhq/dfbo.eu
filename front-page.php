@@ -22,7 +22,7 @@ get_header();
 						<div class="row">
 							<div class="col-md-8">
 								<div class="bannercontent text-left p-4">
-									<h1 class="mb-4">Wij hebben de focus op PRO actief<br>Samenwerking <span> & </span> vertrouwen</h1>
+									<h1 class="mb-4"><?php echo get_field('header_title', 'option'); ?></h1>
 								</div>
 							</div>
 						</div>
@@ -69,6 +69,7 @@ get_header();
 							<span class="vakgebied">Voorstellen </span>
 							<h2 class="mt-3">De Dutch Family Business Office</h2>
 							<p><?php echo the_content(); ?></p>
+							<a href="https://dfbo.eu/over-ons/" class="btn btn-primary">Meer over ons</a>
 						</div>
 					</div>
 				</div>

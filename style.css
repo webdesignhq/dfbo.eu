@@ -283,7 +283,6 @@ header {
 	background-color: var(--secondary-color)!important;
 }
 
-
 .country-selector.weglot-dropdown {
 	background-color: unset !important;
 }
@@ -508,11 +507,6 @@ header {
 #team h2 {
 	text-transform: initial;
 	color: var(--primary-color);
-}
-
-#team .team-subtitle{
-	font-size: 12px;
-	font-style: italic;
 }
 
 #team .vakgebied{
@@ -859,7 +853,7 @@ header {
 
 /* Contact Page */
 #contact-page #contact {
-	background: url('./img/startpagina.png') bottom right no-repeat;
+	background: url('https://dfbo.eu/wp-content/uploads/2021/11/istockphoto-1281724535-2048x2048-1.jpg') bottom right no-repeat;
 	padding-bottom: 250px;
 	margin-bottom: 50px;
 	height: 800px;
@@ -876,10 +870,27 @@ header {
 	color: var(--secondary-color);
 }
 
+/* Content */
+
+#content {
+	padding-bottom: 250px;
+	margin-bottom: 50px;
+	height: 800px;
+	
+}
+
+.contentblock {
+	background-color: #F8F9FB;
+	padding: 5% 10%;
+}
+
+.contentblock span {
+	color: var(--secondary-color);
+}
+
 
 /* Footer Section */
 #footer {
-	margin-top: 100px;
 	background: linear-gradient(90deg, var(--sand-40) 95%, var(--sand-40) 20%, var(--white-color) 5%);
 	position: relative;
 	padding: 100px 0;

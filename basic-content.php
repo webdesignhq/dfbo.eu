@@ -1,15 +1,15 @@
 <?php
 /*
-Template Name: About Us
+Template Name: Basis inhoud (twee kolommen)
 */ get_header(); 
 
-$headerVideo = get_field('about_image');
+$contentimage = get_field('content_image');
 ?>
 
-<div id="contact-page">
+<div id="content">
 	<div class="container-fluid p-0">
 		<div class="d-flex flex-row">
-			<div class="col-8 contactblock">
+			<div class="col-8 contentblock">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 							 
 				<?php the_content(); ?>
@@ -25,12 +25,11 @@ $headerVideo = get_field('about_image');
 				 
 			</div>
 			<div class="col-4">
-				<img src="<?php echo $headerVideo; ?>" style="width: 100%; height: 100%; object-fit: cover;"/>
+				<img src="<?php echo $contentimage; ?>" style="width: 100%; height: 100%; object-fit: cover;"/>
 			</div>
 		</div>
 	</div>	
 
 <?php
 get_footer();
-
 ?>

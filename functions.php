@@ -7,7 +7,7 @@ if ( ! function_exists( 'website_setup' ) ) :
 *  It is important to set up these functions before the init hook so that none of these
 *  features are lost.
 *
-*  @since MyFirstTheme 1.0
+*  @since HQonline
 */
 function website_setup() 
 { 
@@ -16,7 +16,7 @@ function website_setup()
 		'primary'   => __( 'Primary Menu', 'website' ),
 		'secondary' => __( 'Secondary Menu', 'website' ),
 		'footer_moreinfo' => __( 'Footer Meer informatie', 'website' ),
-		'footer_customerservice' => __( 'Footer Klantenservice', 'website' )
+		'footer_services' => __( 'Footer Diensten', 'website' )
 	) );
 	
 	if ( ! isset ( $content_width) )

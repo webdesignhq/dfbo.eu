@@ -7,7 +7,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package WordPress
- * @subpackage Adinda Media
+ * @subpackage HQonline
  * @since 1.0.0
  */
 
@@ -45,28 +45,18 @@ elseif(is_single()) { ?>
 					</div>
 				</div>
 				<div class="col-md-2  offset-1  small-12 columns">
-					<strong>Diensten</strong></li>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+					<strong>Diensten</strong>
+					<?php wp_nav_menu( array( 'theme_location' => 'footer_moreinfo' ) ); ?>
 				</div>
 				<div class="col-md-2 offset-1 small-12 columns">
 					<strong>Meer informatie</strong>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+					<?php wp_nav_menu( array( 'theme_location' => 'footer_services' ) ); ?>
 
 	
 				</div>
 				<div class="col-md-2 offset-1 small-12 columns">
-					<ul>
-						<li><strong>Contactgegevens</strong></li>
-					</ul>
-					<ul>
-						<li>Noordersingel 1</li>
-						<li>9401 JV Assen</li>
-					</ul>
-
-					<ul>
-						<li><a class="contact" href="#">0593 12346</a></li>
-						<li><a href="mailto:info@dfbo.eu">info@dfbo.eu</a></li>
-					</ul>
+					<strong>Contactgegevens</strong>
+					<?php echo get_field('contactdetails','option'); ?>
 				</div>
 			</div>
 		</div>
