@@ -942,11 +942,17 @@ header {
   position: absolute;
   top: 0;
   /* right: 105%; */
-  background-color: var(--white-color);
+  background-color: var(--primary-color);
   position: fixed;
   padding-top: 50px;
 }
 
+#mobile-site-navigation .menu-item{
+	text-align: center;
+}
+#mobile-site-navigation .menu-item a{
+	color: var(--white-color)!important;
+}
 
 .site-navigation
 {
@@ -1078,8 +1084,16 @@ header {
 .mobile__menu--container .main-navigation ul{
 display: block;
 margin-top: 150px;
-margin-left: 20px;
+/* margin-left: 20px; */
 font-size: 22px;
+}
+
+.mobile__menu--container .current-menu-item{
+	background-color: var(--secondary-color);
+}
+
+.mobile__menu--container .main-navigation ul li:last-child{
+	background-color: transparent!important;
 }
 
 .mobile__menu--container .main-navigation ul li{
@@ -1099,6 +1113,11 @@ padding: 15px;
 
 .mobile__menu--container nav ul li a{
 color: var(--primary-color);
+}
+
+.header-section{
+	z-index: 1001;
+	position: relative;
 }
 
 .mobile-active{
@@ -1179,7 +1198,29 @@ left: 0;
 	}
 
 	.overlay, .bannerblocks{
+/* 		position: abso!important; */
+	}
+	
+	#banner .bannercontent{
 		position: relative!important;
 	}
-
+	#banner .bannerblocks{
+		position: relative!important;
+	}
+	
+	.aboutblock{
+		padding: 5% 10%;
+		margin: 150px 0;
+		position: relative;
+	}
+	
+	#diensten__overlay--container{
+		z-index: 0!important;
+	}
+	#team{
+		margin: 50px 0 100px 0;
+	}
+	.serviceblock{
+		height: auto;
+	}
 }
