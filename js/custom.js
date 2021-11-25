@@ -24,6 +24,7 @@ $(document).ready(function() {
 	  prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-long-arrow-alt-left"></i></button>',
 	  nextArrow: '<button type="button" class="slick-next"><i class="fas fa-long-arrow-alt-right"></i></button>',
 	  dots: false,
+	  mobileFirst: true,
 	  slidesToShow: 2.5,
 	  slidesToScroll: 1,
 	  responsive: [
