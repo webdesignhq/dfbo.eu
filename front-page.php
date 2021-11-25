@@ -12,8 +12,8 @@ get_header();
 <?php is_front_page(); ?>
 <div id="fullpage">
 		<div class="section" id="section-1" style="z-index: 99;">
-			<video autoplay muted loop data-autoplay playsinline id="videobg" style="filter: grayscale(100%);">
-			<source src="<?php echo $src;?>" type="video/webm">
+			<video preload="metadata" autoplay muted loop data-autoplay playsinline  id="videobg" style="filter: grayscale(100%);" type="video/mp4">
+			<source src="<?php echo $src;?>">
 			</video>
 			<script>
     			$("video[autoplay]").each(function(){ this.play(); });
@@ -155,7 +155,7 @@ get_header();
 						?>
 							<div class="newsblock p-5 my-5 me-5">
 								<?php global $post; ?>
-								<?php echo get_avatar( get_the_author_meta( $authorID ) , 16 ); ?>
+<!-- 								<?php echo get_avatar( get_the_author_meta( $authorID ) , 16 ); ?> -->
 								<span><?php echo get_the_date(); ?></span>
 								<h3><a href="<?php echo get_permalink();?>"> <?php echo get_the_title(); ?></a></h3>
 								<p><?php echo wp_trim_words(get_the_excerpt(), 30); ?></p>
