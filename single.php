@@ -32,12 +32,10 @@ Template Name: Single Service
 		<div class="container-xxl">
 			<div class="d-flex flex-row">
 				<div class="d-flex flex-column">
-						<h2> Interesse? </h2>
-						<h3>Neem direct contact met ons op!</h3>
-						<p class="pt-4">
-						Alles wat hier staat is slechts om een indruk te geven van het grafische effect van tekst op deze plek. Wat u hier leest is een voorbeeldtekst
-						</p>
-						[FORM SHORTCODE]
+						<h2><?php echo get_field('contact_title', 'option'); ?></h2>
+						<h3><?php echo get_field('contact_subtitle', 'option'); ?></h3>
+						<p class="pt-4"><?php echo get_field('contact_text', 'option'); ?></p>
+						<?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]') ?>
 				</div>
 			</div>
 		</div>	
