@@ -44,17 +44,17 @@ elseif(is_single()) { ?>
 						<img src="<?php echo $image; ?>">
 					</div>
 				</div>
-				<div class="col-md-2  offset-1  small-12 columns">
-					<strong>Diensten</strong>
+				<div class="col-md-2  offset-lg-1 mt-lg-0 mt-4  small-12 columns">
+					<strong>Meer informatie</strong>
 					<?php wp_nav_menu( array( 'theme_location' => 'footer_moreinfo' ) ); ?>
 				</div>
-				<div class="col-md-2 offset-1 small-12 columns">
-					<strong>Meer informatie</strong>
+				<div class="col-md-2 offset-lg-1 small-12 columns">
+					<strong>Diensten</strong>
 					<?php wp_nav_menu( array( 'theme_location' => 'footer_services' ) ); ?>
 
 	
 				</div>
-				<div class="col-md-2 offset-1 small-12 columns">
+				<div class="col-md-2 offset-lg-1 small-12 columns">
 					<strong>Contactgegevens</strong>
 					<?php echo get_field('contactdetails','option'); ?>
 				</div>

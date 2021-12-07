@@ -30,7 +30,7 @@
 
 <body>
 	<header class="header p-4">
-		<div class="container-fluid">
+		<div class="container-fluid header-section">
 			<div class="row">
 				<div class="col-lg-4 col-sm-6 text-center">
 					<div class="custom_logo">
@@ -48,7 +48,6 @@
 					<nav id="site-navigation" class="main-navigation me-4">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 					</nav>
-					<div id="weglot_here"></div>
 				</div>
 
 			</div>
@@ -60,9 +59,9 @@
 					<nav id="mobile-site-navigation" class="main-navigation absolute d-block d-lg-none">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 					</nav>
+					
 				</div>
-			</div>	
-		</div>			
+			</div>			
 	</header>
 
 	<div id="diensten__overlay--container" class="d-flex flex-column justify-content-center">
@@ -95,7 +94,7 @@
 	
 	<?php if(!is_page(5) && !is_category()) { ?>
 		<?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); ?>
-		<div id="bannerindex" class="d-flex flex-column justify-content-center" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; background-size: cover; height: 575px;">
+		<div id="bannerindex" class="d-flex flex-column justify-content-center" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; background-size: cover; background-position: center; height: 575px;">
 			<div class="container-xxl">
 				<div class="product__container col-12 d-lg-flex d-block flex-row">
 					<div class="d-flex flex-column">
@@ -112,7 +111,7 @@
 	<?php } ?>
 
 	<?php if(is_category()) { ?>
-		<div id="bannerindex" class="d-flex flex-column justify-content-center" style="background: url('<?php bloginfo('template_directory'); ?>/img/bg-vakgebieden.png') no-repeat; background-size: cover; height: 575px;">
+		<div id="bannerindex" class="d-flex flex-column justify-content-center" style="background: url('https://dfbo.eu/wp-content/uploads/2021/11/iStock-1323636695.jpg') no-repeat; background-size: cover; height: 575px;">
 			<div class="container-xxl">
 				<div class="product__container col-12 d-lg-flex d-block flex-row">
 					<div class="d-flex flex-column justify-content-center">

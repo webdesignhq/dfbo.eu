@@ -444,7 +444,8 @@ header {
     height: 250px;
     object-fit: cover;
 	filter: grayscale(100);
-		transition: 0.4s;
+	transition: 0.4s;
+	object-position: top;
 }
 
 
@@ -454,10 +455,12 @@ header {
 }
 
 #services {
-	background-image: url('./img/bg-vakgebieden.png');
+	background-image: url('https://dfbo.eu/wp-content/uploads/2021/11/iStock-1323636695.jpg');
 	/* filter: grayscale(100); */
 	padding-bottom: 350px;
 	/* margin-bottom: 50px; */
+    background-size: cover;
+    background-position: center;
 	
 }
 
@@ -989,16 +992,16 @@ header {
 	cursor: pointer;
 }
 
-.main-navigation li:last-child {
+.main-navigation li:nth-last-child(2) {
 	background-color: var(--secondary-color);
 	color: var(--white-color);
 }
 
-.main-navigation li:last-child:hover {
+.main-navigation li:nth-last-child(2):hover {
 	background-color: var(--primary-color);
 }
 
-.main-navigation li:last-child:hover a {
+.main-navigation li:nth-last-child(2):hover a {
 	color: var(--white-color);
 }
 
@@ -1136,7 +1139,26 @@ left: 0;
 	display: block;
 }
 
+@media screen and (max-width: 1600px){
+	#banner .bannerblocks{
+		padding: 0;
+	}
+}
+
 @media screen and (max-width: 786px) {
+	h1 {
+		font-size: 30px;
+		line-height: 40px !important;
+	}
+
+	#banner h1 {
+		margin-top: 40px;
+	}
+	
+	h2 {
+		font-size: 23px;
+	}
+	
 	.sub-menu
 	{
 		display: none !important;
@@ -1205,7 +1227,7 @@ left: 0;
 		position: relative!important;
 	}
 	#banner .bannerblocks{
-		position: relative!important;
+/* 		position: relative!important; */
 	}
 	
 	.aboutblock{
@@ -1220,7 +1242,17 @@ left: 0;
 	#team{
 		margin: 50px 0 100px 0;
 	}
+	#team .vakgebied::before{
+		left: -8%!important;
+	}
+	#news .read-more::before {
+    	left: -9.5%!important;
+	}
 	.serviceblock{
 		height: auto;
+	}
+	
+	footer{
+		text-align: center;
 	}
 }
